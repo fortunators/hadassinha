@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hadassa Te Amo</title>
+
+
+<style>
+    body{
+        background-color: orchid;
+    }
+    
+    .painel{
+        margin: auto;
+        background-color: white;
+        width: 500px;
+        height: 900px;
+        border-radius: 20px;
+        text-align: center;
+        padding-top: 60px;
+        font-family: serif;
+    }
+    #sim {
+        height: 40px;
+        width: 60px;
+        background-color: red;
+        border: 2px solid white;
+        border-radius: 10px;
+        color: white;
+        margin-left: -50px;
+
+
+    }
+    #nao{
+        position: absolute;
+        height: 40px;
+        width: 70px;
+        background-color: red;
+        border: 2px solid white;
+        border-radius: 10px;
+        color: white;
+        margin-left: 20px;
+    }
+    
+</style>
+    
+</head>
+<body>
+    
+
+<div class="painel">
+ <h1>Te Amo Hadassa❤️</h1>
+ <img src="fortunato.jpg" alt="" srcset="" width="75%">
+ <h2>Escolha Com o Coração Hadassinha 🫶🏾</h5> 
+<a href="https://www.youtube.com/watch?v=r1XE8ON8fos"><button id="sim">Casar!</button></a>
+<button onmouseover="fuja" id="nao">Namorar!</button>
+
+</div>
+
+<script>
+    function fuja(){
+        var botaoNao = document.getElementById("nao")
+
+        var larguraJanela = window.innerWidth;
+        var alturaJanela = window.innerHeight;
+
+        var maxX = larguraJanela - botaoNao.offsetWidth;
+        var maxY = alturaJanela - botaoNao.offsetHeight;
+
+        var aleatoriox = Math.floor(Math.random() * maxX);
+        var aleatorioy = Math.floor(Math.random() * maxY);
+
+botaoNao.style.left = aleatoriox + "px";
+botaoNao.style.top = aleatorioy + "px";
+
+    }
+</script>
+
+
+</body>
+</html>
